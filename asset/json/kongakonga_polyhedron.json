@@ -1,0 +1,37 @@
+[
+ {
+  "title": "tetrahedron",
+  "vertex count": 4,
+  "edge count": 6,
+  "face count": 4,
+  "face": "trigon"
+ },
+ {
+  "title": "hexahedron",
+  "vertex count": 8,
+  "edge count": 12,
+  "face count": 6,
+  "face": "trigon"
+ },
+ {
+  "title": "octahedron",
+  "vertex count": 6,
+  "edge count": 12,
+  "face count": 8,
+  "face": "trigon"
+ },
+ {
+  "title": "dodecahedron",
+  "vertex count": 20,
+  "edge count": 30,
+  "face count": 12,
+  "face": "pentagon"
+ },
+ {
+  "title": "icosahedron",
+  "vertex count": 12,
+  "edge count": 30,
+  "face count": 20,
+  "face": "trigon"
+ }
+]
