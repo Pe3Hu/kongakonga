@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://cxqbaqgd23tld"
-path="res://.godot/imported/temporarily vertex.png-6a2a82298d1d29fec332d052bfd99b1c.ctex"
+uid="uid://rwuw6adjrtib"
+path="res://.godot/imported/permanently edge.png-33ca82846e44a0942010881b388c67a4.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://asset/png/hoard/temporarily vertex.png"
-dest_files=["res://.godot/imported/temporarily vertex.png-6a2a82298d1d29fec332d052bfd99b1c.ctex"]
+source_file="res://asset/png/hierarchy/permanently edge.png"
+dest_files=["res://.godot/imported/permanently edge.png-33ca82846e44a0942010881b388c67a4.ctex"]
 
 [params]
 

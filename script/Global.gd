@@ -24,12 +24,14 @@ func _ready() -> void:
 
 func init_arr() -> void:
 	arr.rank = [1, 2, 3, 4, 5]#, 6]
-	arr.suit = ["aqua", "wind", "fire", "earth"]
 	arr.side = ["left", "right"]
 	arr.state = ["vigor", "standard", "fatigue"]
 	arr.medal = ["winner", "loser"]
 	arr.phase = ["dawn", "noon", "dusk"]
 	arr.hierarchy = ["vertex", "edge", "face"]
+	arr.face = ["trigon", "tetragon", "pentagon"]
+	arr.element = ["aqua", "wind", "fire", "earth"]
+	arr.status = ["temporarily", "permanently"]
 
 
 func init_num() -> void:
@@ -43,6 +45,10 @@ func init_num() -> void:
 	num.weight = {}
 	num.weight.vertex = 1
 	num.weight.edge = 2
+	
+	num.experience = {}
+	num.experience.vertex = 5
+	num.experience.edge = 9
 
 
 func init_dict() -> void:
@@ -50,6 +56,7 @@ func init_dict() -> void:
 	init_neighbor()
 	init_card()
 	init_polyhedron()
+	init_deck()
 
 
 func init_chain() -> void:
@@ -183,6 +190,15 @@ func init_polyhedron() -> void:
 		dict.face.weight[face] = count * (num.weight.vertex + num.weight.edge)
 
 
+func init_deck() -> void:
+	dict.deck = {}
+	dict.deck.starter = []
+	
+	var path = "res://asset/json/kongakonga_deck.json"
+	var array = load_data(path)
+	dict.deck.starter.append_array(array)
+
+
 func init_node() -> void:
 	node.game = get_node("/root/Game")
 
@@ -193,6 +209,7 @@ func init_scene() -> void:
 	scene.table = load("res://scene/2/table.tscn")
 	
 	scene.card = load("res://scene/3/card.tscn")
+	scene.chevron = load("res://scene/3/chevron.tscn")
 
 
 func init_vec():
@@ -202,15 +219,17 @@ func init_vec():
 	
 	vec.size.rank = Vector2(vec.size.sixteen)
 	vec.size.combo = Vector2(vec.size.sixteen) * 2
-	vec.size.gambler = Vector2(vec.size.sixteen) * 3
+	vec.size.gambler = Vector2(vec.size.sixteen) * 2.5
 	vec.size.libra = Vector2(vec.size.sixteen) * 4
 	
-	vec.size.state = Vector2(128, 16)
+	vec.size.bar = Vector2(128, 16)
 	#vec.size.tick = Vector2(5, 12)
 	#vec.size.stage = Vector2(vec.size.tick)
 	vec.size.number = Vector2(vec.size.sixteen) * 2.5
 	vec.size.gon = Vector2(vec.size.number)
-	vec.size.hoard = Vector2(vec.size.number)
+	vec.size.hierarchy = Vector2(vec.size.number)
+	vec.size.time = Vector2(vec.size.number)
+	vec.size.trigger = Vector2(vec.size.number)
 	
 	init_window_size()
 
@@ -229,16 +248,29 @@ func init_color():
 	color.card.selected = Color.from_hsv(160 / h, 0.6, 0.7)
 	color.card.unselected = Color.from_hsv(0 / h, 0.4, 0.9)
 	
-	color.state = {}
-	color.state.vigor = {}
-	color.state.vigor.fill = Color.from_hsv(120 / h, 1, 0.9)
-	color.state.vigor.background = Color.from_hsv(120 / h, 0.25, 0.9)
-	color.state.standard = {}
-	color.state.standard.fill = Color.from_hsv(30 / h, 1, 0.9)
-	color.state.standard.background = Color.from_hsv(30 / h, 0.25, 0.9)
-	color.state.fatigue = {}
-	color.state.fatigue.fill = Color.from_hsv(0, 1, 0.9)
-	color.state.fatigue.background = Color.from_hsv(0, 0.25, 0.9)
+	color.bar = {}
+	color.bar.vigor = {}
+	color.bar.vigor.fill = Color.from_hsv(120 / h, 1, 0.9)
+	color.bar.vigor.background = Color.from_hsv(120 / h, 0.25, 0.9)
+	color.bar.standard = {}
+	color.bar.standard.fill = Color.from_hsv(30 / h, 1, 0.9)
+	color.bar.standard.background = Color.from_hsv(30 / h, 0.25, 0.9)
+	color.bar.fatigue = {}
+	color.bar.fatigue.fill = Color.from_hsv(0, 1, 0.9)
+	color.bar.fatigue.background = Color.from_hsv(0, 0.25, 0.9)
+	color.bar.experience = {}
+	color.bar.experience.fill = Color.from_hsv(210 / h, 1, 0.9)
+	color.bar.experience.background = Color.from_hsv(210 / h, 0.25, 0.9)
+	
+	color.kind = {}
+	color.kind.head = Color.from_hsv(0 / h, 0.0, 0.0)
+	color.kind.trigon = Color.from_hsv(120 / h, 0.4, 0.9)
+	color.kind.tetragon = Color.from_hsv(180 / h, 0.4, 0.9)
+	color.kind.pentagon = Color.from_hsv(60 / h, 0.4, 0.9)
+	color.kind.aqua = Color.from_hsv(210 / h, 0.4, 0.9)
+	color.kind.wind = Color.from_hsv(270 / h, 0.4, 0.9)
+	color.kind.fire = Color.from_hsv(0 / h, 0.4, 0.9)
+	color.kind.earth = Color.from_hsv(30 / h, 0.4, 0.9)
 
 
 

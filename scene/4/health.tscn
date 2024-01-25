@@ -1,8 +1,8 @@
 [gd_scene load_steps=5 format=3 uid="uid://cnlof2444v3rr"]
 
-[ext_resource type="Script" path="res://scene/3/health.gd" id="1_wpa7t"]
+[ext_resource type="Script" path="res://scene/4/health.gd" id="1_wpa7t"]
 [ext_resource type="PackedScene" uid="uid://ciw38iqel0v5a" path="res://scene/0/icon.tscn" id="2_lammi"]
-[ext_resource type="PackedScene" uid="uid://c3ix84rhw8usx" path="res://scene/3/state.tscn" id="3_pg44l"]
+[ext_resource type="PackedScene" uid="uid://c3ix84rhw8usx" path="res://scene/4/state.tscn" id="3_pg44l"]
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_7paps"]
 

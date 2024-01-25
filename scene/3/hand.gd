@@ -14,7 +14,7 @@ func set_attributes(input_: Dictionary) -> void:
 	gameboard = input_.gameboard
 	type = input_.type
 	
-	capacity.current = 2
+	capacity.current = 4
 	capacity.limit = 10
 
 

@@ -4,6 +4,7 @@ extends MarginContainer
 #region vars
 @onready var gameboard = $VBox/Gameboard
 @onready var health = $VBox/Health
+@onready var evolution = $VBox/Evolution
 @onready var bureau = $VBox/Bureau
 
 var cradle = null
@@ -23,6 +24,7 @@ func init_basic_setting() -> void:
 	var input = {}
 	input.gambler = self
 	gameboard.set_attributes(input)
+	evolution.set_attributes(input)
 	bureau.set_attributes(input)
 	
 	input.limits = {}

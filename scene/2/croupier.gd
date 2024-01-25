@@ -44,6 +44,10 @@ func commence() -> void:
 	init_basic_setting()
 	
 	follow_stage()
+	
+	for gambler in gamblers:
+		gambler.bureau.end_of_turn()
+	
 	#while table.loser == null:
 	#	follow_stage()
 #endregion

@@ -1,0 +1,30 @@
+[
+ {
+  "kind": "trigon",
+  "subtype": "temporarily",
+  "type": "vertex",
+  "value": 1,
+  "count": 4
+ },
+ {
+  "kind": "trigon",
+  "subtype": "temporarily",
+  "type": "edge",
+  "value": 1,
+  "count": 3
+ },
+ {
+  "kind": "trigon",
+  "subtype": "temporarily",
+  "type": "vertex",
+  "value": 2,
+  "count": 3
+ },
+ {
+  "kind": "trigon",
+  "subtype": "temporarily",
+  "type": "edge",
+  "value": 2,
+  "count": 2
+ }
+]

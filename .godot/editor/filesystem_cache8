@@ -1,5 +1,5 @@
 ea4bc82a6ad023ab7ee23ee620429895
-::res://::1706035386
+::res://::1706142540
 README.md::TextFile::-1::1705524399::0::1::::<><>::
 ::res://asset/::1706034944
 default_env.tres::Environment::-1::1690116911::0::1::::<><>::
@@ -15,13 +15,19 @@ SwilyBright-Italic.otf::FontFile::4711532664557462683::1689611680::1693215257::1
 Chunk Five Print.otf::FontFile::7482982434189746187::1693025532::1693215257::1::::<><>::
 JosefinSans-Bold.ttf::FontFile::3888160851700023909::1693025548::1693215257::1::::<><>::
 LeagueGothic-Regular.otf::FontFile::2105460648084705691::1693025542::1693215257::1::::<><>::
-::res://asset/json/::1706035961
+::res://asset/json/::1706142671
+kongakonga_deck.json::JSON::-1::1706142671::0::1::::<><>::
 kongakonga_polyhedron.json::JSON::-1::1706035945::0::1::::<><>::
-::res://asset/png/::1706038419
+::res://asset/png/::1706143671
 ::res://asset/png/combo/::1706034944
 amount.png::CompressedTexture2D::6532459768619964185::1705521913::1705522284::1::::<><>::
 chance.png::CompressedTexture2D::6932915681460681233::1705521800::1705522284::1::::<><>::
 limit.png::CompressedTexture2D::8343065457597522528::1705521811::1705522284::1::::<><>::
+::res://asset/png/element/::1706141991
+aqua.png::CompressedTexture2D::7720099103802802008::1706139739::1706141991::1::::<><>::
+earth.png::CompressedTexture2D::2103059449148335813::1706139675::1706141991::1::::<><>::
+fire.png::CompressedTexture2D::2850234341249825074::1706139671::1706141991::1::::<><>::
+wind.png::CompressedTexture2D::1053351162266020841::1706139688::1706141991::1::::<><>::
 ::res://asset/png/gambler/::1706034944
 0.png::CompressedTexture2D::3940910869049050773::1701265294::1705522656::1::::<><>::
 1.png::CompressedTexture2D::8104163186926223454::1701265329::1705522656::1::::<><>::
@@ -40,13 +46,13 @@ hexahedron.png::CompressedTexture2D::7906672858353962958::1706033870::1706036760
 icosahedron.png::CompressedTexture2D::1962299689302757646::1706032276::1706036760::1::::<><>::
 octahedron.png::CompressedTexture2D::5919837684010204726::1706033363::1706036760::1::::<><>::
 tetrahedron.png::CompressedTexture2D::5084542502181000088::1706033333::1706036760::1::::<><>::
-::res://asset/png/hoard/::1706038996
-permanently edge.png::CompressedTexture2D::1239881908129980757::1706038932::1706038997::1::::<><>::
-permanently face.png::CompressedTexture2D::8828753936859441268::1706037581::1706038421::1::::<><>::
-permanently vertex.png::CompressedTexture2D::7942774646433894964::1706037680::1706038421::1::::<><>::
-temporarily edge.png::CompressedTexture2D::7478881456398809426::1706038980::1706038997::1::::<><>::
-temporarily face.png::CompressedTexture2D::4042978253715349740::1706036679::1706038421::1::::<><>::
-temporarily vertex.png::CompressedTexture2D::6420276381934608821::1706034480::1706038421::1::::<><>::
+::res://asset/png/hierarchy/::1706143490
+permanently edge.png::CompressedTexture2D::1239881908129980757::1706038932::1706143490::1::::<><>::
+permanently face.png::CompressedTexture2D::8828753936859441268::1706037581::1706143490::1::::<><>::
+permanently vertex.png::CompressedTexture2D::7942774646433894964::1706037680::1706143490::1::::<><>::
+temporarily edge.png::CompressedTexture2D::7478881456398809426::1706038980::1706143490::1::::<><>::
+temporarily face.png::CompressedTexture2D::4042978253715349740::1706036679::1706143490::1::::<><>::
+temporarily vertex.png::CompressedTexture2D::6420276381934608821::1706034480::1706143490::1::::<><>::
 ::res://asset/png/libra/::1706034944
 equilibrium.png::CompressedTexture2D::5793554814487925158::1705523087::1705523366::1::::<><>::
 left.png::CompressedTexture2D::2954988551043410254::1705523177::1705523366::1::::<><>::
@@ -56,46 +62,59 @@ clubs.png::CompressedTexture2D::9212691992358346515::1705519492::1705519523::1::
 diamonds.png::CompressedTexture2D::720937083366804863::1705519488::1705519523::1::::<><>::
 hearts.png::CompressedTexture2D::3621028529949962940::1705519497::1705519523::1::::<><>::
 spades.png::CompressedTexture2D::7289775735806700998::1705519479::1705519523::1::::<><>::
-::res://scene/::1706035313
-::res://scene/0/::1706038684
+::res://asset/png/time/::1706141991
+permanently future.png::CompressedTexture2D::6336963139588340258::1706140041::1706141991::1::::<><>::
+permanently past.png::CompressedTexture2D::5673917083062036317::1706140076::1706141991::1::::<><>::
+permanently present.png::CompressedTexture2D::3106571016234006865::1706140074::1706141991::1::::<><>::
+temporarily future.png::CompressedTexture2D::5324558297677430943::1706139904::1706141991::1::::<><>::
+temporarily past.png::CompressedTexture2D::5453874525183858097::1706139836::1706141991::1::::<><>::
+temporarily present.png::CompressedTexture2D::3245410755625858452::1706139821::1706141991::1::::<><>::
+::res://asset/png/trigger/::1706143681
+none.png::CompressedTexture2D::7254154864517608898::1706038741::1706143681::1::::<><>::
+::res://scene/::1706142540
+::res://scene/0/::1706144773
 blank.tscn::PackedScene::706186300528003691::1701353977::0::1::::<><>::
-game.gd::GDScript::-1::1705700451::0::1::::<>Node<>::
+game.gd::GDScript::-1::1706142127::0::1::::<>Node<>::
 game.tscn::PackedScene::8246655032211948728::1699765042::0::1::::<><>::res://scene/0/game.gd<>uid://c8p8p11wpyu27
 icon.gd::GDScript::-1::1706038684::0::1::::<>MarginContainer<>::
-icon.tscn::PackedScene::5381527879177219912::1696234734::0::1::::<><>::res://scene/0/icon.gd<>uid://deu2vlj4q8un0
+icon.tscn::PackedScene::5381527879177219912::1706144773::0::1::::<><>::res://scene/0/icon.gd<>uid://deu2vlj4q8un0::::res://asset/font/letter/Chunk Five Print.otf
 sketch.gd::GDScript::-1::1705515755::0::1::::<>MarginContainer<>::
 sketch.tscn::PackedScene::7122070728214644470::1706035313::0::1::::<><>::res://scene/0/sketch.gd<>uid://tiu625irnnwp::::res://scene/1/cradle.tscn<>uid://bip7y5w7vgcvc::::res://scene/2/casino.tscn
-::res://scene/1/::1706038840
+::res://scene/1/::1706144896
 cradle.gd::GDScript::-1::1705516812::0::1::::<>MarginContainer<>::
-cradle.tscn::PackedScene::1351374215482788775::1706038840::0::1::::<><>::res://scene/1/cradle.gd
+cradle.tscn::PackedScene::1351374215482788775::1706039097::0::1::::<><>::res://scene/1/cradle.gd
 gambler.gd::GDScript::-1::1706038568::0::1::::<>MarginContainer<>::
-gambler.tscn::PackedScene::7228935906864600981::1706038840::0::1::::<><>::res://scene/1/gambler.gd<>uid://cnlof2444v3rr::::res://scene/3/health.tscn<>uid://dtop6ce8ht5b::::res://scene/3/gameboard.tscn<>uid://dprnwsrk4wybs::::res://scene/4/bureau.tscn
-::res://scene/2/::1706038840
+gambler.tscn::PackedScene::7228935906864600981::1706144896::0::1::::<><>::res://scene/1/gambler.gd<>uid://cnlof2444v3rr::::res://scene/4/health.tscn<>uid://dtop6ce8ht5b::::res://scene/3/gameboard.tscn<>uid://dprnwsrk4wybs::::res://scene/4/bureau.tscn
+::res://scene/2/::1706143616
 casino.gd::GDScript::-1::1705516824::0::1::::<>MarginContainer<>::
 casino.tscn::PackedScene::2980884513098938068::1706035313::0::1::::<><>::res://scene/2/casino.gd
-combo.gd::GDScript::-1::1705699119::0::1::::<>MarginContainer<>::
+combo.gd::GDScript::-1::1706143616::0::1::::<>MarginContainer<>::
 combo.tscn::PackedScene::8744555724285255097::1706036547::0::1::::<><>::res://scene/2/combo.gd<>uid://ciw38iqel0v5a::::res://scene/0/icon.tscn
-croupier.gd::GDScript::-1::1706038485::0::1::::<>MarginContainer<>::
+croupier.gd::GDScript::-1::1706039168::0::1::::<>MarginContainer<>::
 croupier.tscn::PackedScene::7907558050116591475::1706036547::0::1::::<><>::res://scene/2/croupier.gd<>uid://ciw38iqel0v5a::::res://scene/0/icon.tscn<>uid://dwt6s416tcqrx::::res://scene/2/combo.tscn
 table.gd::GDScript::-1::1705701593::0::1::::<>MarginContainer<>::
-table.tscn::PackedScene::6527562687757536026::1706038840::0::1::::<><>::res://scene/2/table.gd<>uid://dkwqlculf428n::::res://scene/2/croupier.tscn
-::res://scene/3/::1706036547
-card.gd::GDScript::-1::1706034995::0::1::::<>MarginContainer<>::
-card.tscn::PackedScene::8035728357368175602::1706036547::0::1::::<><>::res://scene/3/card.gd<>uid://ciw38iqel0v5a::::res://scene/0/icon.tscn
+table.tscn::PackedScene::6527562687757536026::1706142148::0::1::::<><>::res://scene/2/table.gd<>uid://dkwqlculf428n::::res://scene/2/croupier.tscn
+::res://scene/3/::1706144773
+card.gd::GDScript::-1::1706144138::0::1::::<>MarginContainer<>::
+card.tscn::PackedScene::8035728357368175602::1706144773::0::1::::<><>::res://scene/3/card.gd
 cardstack.gd::GDScript::-1::1705701075::0::1::::<>MarginContainer<>::
 cardstack.tscn::PackedScene::17775923480774436::1706035311::0::1::::<><>::res://scene/3/cardstack.gd
-gameboard.gd::GDScript::-1::1705518683::0::1::::<>MarginContainer<>::
+chevron.tscn::PackedScene::7547628810335087865::1706144773::0::1::::<><>::res://scene/3/chevron.gd<>uid://ciw38iqel0v5a::::res://scene/0/icon.tscn
+gameboard.gd::GDScript::-1::1706142392::0::1::::<>MarginContainer<>::
 gameboard.tscn::PackedScene::250668164588139025::1706035311::0::1::::<><>::res://scene/3/gameboard.gd<>uid://iu1cq1e5uc7::::res://scene/3/cardstack.tscn<>uid://vmnbghswrs0l::::res://scene/3/hand.tscn
-hand.gd::GDScript::-1::1705517540::0::1::::<>MarginContainer<>::
+hand.gd::GDScript::-1::1706144768::0::1::::<>MarginContainer<>::
 hand.tscn::PackedScene::1499529682948924941::1706035311::0::1::::<><>::res://scene/3/hand.gd
+chevron.gd::GDScript::-1::1706144618::0::1::::<>MarginContainer<>::
+::res://scene/4/::1706144981
+bureau.gd::GDScript::-1::1706144631::0::1::::<>MarginContainer<>::
+bureau.tscn::PackedScene::8248018708016654996::1706144896::0::1::::<><>::res://scene/4/bureau.gd<>uid://dp5sc2uvjgqm1::::res://scene/4/hoard.tscn<>uid://ciw38iqel0v5a::::res://scene/0/icon.tscn
 health.gd::GDScript::-1::1705701214::0::1::::<>MarginContainer<>::
-health.tscn::PackedScene::5708864921130556955::1706035311::0::1::::<><>::res://scene/3/health.gd<>uid://ciw38iqel0v5a::::res://scene/0/icon.tscn<>uid://c3ix84rhw8usx::::res://scene/3/state.tscn
+health.tscn::PackedScene::5708864921130556955::1706142540::0::1::::<><>::res://scene/4/health.gd<>uid://ciw38iqel0v5a::::res://scene/0/icon.tscn<>uid://c3ix84rhw8usx::::res://scene/4/state.tscn
+hoard.gd::GDScript::-1::1706144593::0::1::::<>MarginContainer<>::
+hoard.tscn::PackedScene::8275123965722156242::1706144773::0::1::::<><>::res://scene/4/hoard.gd<>uid://ciw38iqel0v5a::::res://scene/0/icon.tscn
+experience.tscn::PackedScene::8475846373992863530::1706144981::0::1::::<><>::res://scene/4/state.gd<>uid://deu2vlj4q8un0::::res://asset/font/letter/Chunk Five Print.otf
+evolution.tscn::PackedScene::8253610209946785543::1706145000::0::1::::<><>::res://scene/4/health.gd<>uid://ciw38iqel0v5a::::res://scene/0/icon.tscn<>uid://c3ix84rhw8usx::::res://scene/4/state.tscn
 state.gd::GDScript::-1::1705701574::0::1::::<>MarginContainer<>::
-state.tscn::PackedScene::6756100983103674707::1706036547::0::1::::<><>::res://scene/3/state.gd<>uid://deu2vlj4q8un0::::res://asset/font/letter/Chunk Five Print.otf
-::res://scene/4/::1706038840
-bureau.tscn::PackedScene::8248018708016654996::1706038840::0::1::::<><>::res://scene/4/bureau.gd<>uid://dp5sc2uvjgqm1::::res://scene/4/hoard.tscn<>uid://ciw38iqel0v5a::::res://scene/0/icon.tscn
-bureau.gd::GDScript::-1::1706038379::0::1::::<>MarginContainer<>::
-hoard.tscn::PackedScene::8275123965722156242::1706038840::0::1::::<><>::res://scene/4/hoard.gd<>uid://ciw38iqel0v5a::::res://scene/0/icon.tscn
-hoard.gd::GDScript::-1::1706038449::0::1::::<>MarginContainer<>::
-::res://script/::1706038840
-Global.gd::GDScript::-1::1706038840::0::1::::<>Node<>::
+state.tscn::PackedScene::6756100983103674707::1706142540::0::1::::<><>::res://scene/4/state.gd<>uid://deu2vlj4q8un0::::res://asset/font/letter/Chunk Five Print.otf
+::res://script/::1706143793
+Global.gd::GDScript::-1::1706143793::0::1::::<>Node<>::

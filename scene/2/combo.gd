@@ -50,8 +50,8 @@ func init_icons() -> void:
 
 
 func update_amount(card_: MarginContainer) -> void:
-	var rank = card_.rank.get_number()
-	amountValue.change_number(rank)
+	#var rank = card_.rank.get_number()
+	#amountValue.change_number(rank)
 	
 	if fiasco_check():
 		#print(["fiasco", gambler.health.index.subtype])

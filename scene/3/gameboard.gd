@@ -30,21 +30,19 @@ func init_basic_setting(input_: Dictionary) -> void:
 
 
 func init_starter_kit_cards() -> void:
-	for suit in Global.arr.suit:
-		for rank in Global.arr.rank:
-			for _i in Global.dict.card.count:
-				var input = {}
-				input.gameboard = self
-				input.rank = rank
-				input.suit = suit
-			
-				var card = Global.scene.card.instantiate()
-				discharged.cards.add_child(card)
-				card.set_attributes(input)
-				card.gameboard = self
-				card.advance_area()
-				#print([card.get_index(), suit, rank])
+	for description in Global.dict.deck.starter:
+		for _i in description.count:
+			add_card(description)
+
+
+func add_card(description_: Dictionary) -> void:
+	var input = {}
+	input.gameboard = self
 	
-	#print("___")
-	#reshuffle_available()
+	var card = Global.scene.card.instantiate()
+	discharged.cards.add_child(card)
+	card.set_attributes(input)
+	card.gameboard = self
+	card.advance_area()
+	card.add_chevron(description_)
 #endregion

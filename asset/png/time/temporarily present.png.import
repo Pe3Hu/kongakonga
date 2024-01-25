@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://dx1yj1jwn0tei"
-path="res://.godot/imported/permanently face.png-8a0441a7ba63c7173995a241eece3c18.ctex"
+uid="uid://bmido81p0ncbs"
+path="res://.godot/imported/temporarily present.png-c82072700edfd8248b3bdf65950baa7f.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://asset/png/hoard/permanently face.png"
-dest_files=["res://.godot/imported/permanently face.png-8a0441a7ba63c7173995a241eece3c18.ctex"]
+source_file="res://asset/png/time/temporarily present.png"
+dest_files=["res://.godot/imported/temporarily present.png-c82072700edfd8248b3bdf65950baa7f.ctex"]
 
 [params]
 

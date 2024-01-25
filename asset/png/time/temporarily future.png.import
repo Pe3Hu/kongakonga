@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://dlfslqxxkr6ou"
-path="res://.godot/imported/permanently vertex.png-16daf3bec71bf817e523e383b68537d6.ctex"
+uid="uid://ch4ixyaej4kwt"
+path="res://.godot/imported/temporarily future.png-9e60dfbfc83d50ea811ecf5abdbbc3df.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://asset/png/hoard/permanently vertex.png"
-dest_files=["res://.godot/imported/permanently vertex.png-16daf3bec71bf817e523e383b68537d6.ctex"]
+source_file="res://asset/png/time/temporarily future.png"
+dest_files=["res://.godot/imported/temporarily future.png-9e60dfbfc83d50ea811ecf5abdbbc3df.ctex"]
 
 [params]
 

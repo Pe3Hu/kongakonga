@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://rwuw6adjrtib"
-path="res://.godot/imported/permanently edge.png-984ea977e896180ca9e635193d409054.ctex"
+uid="uid://dh8w50nmc5chs"
+path="res://.godot/imported/aqua.png-476800f1b8e8733334d543662a3dc9f6.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://asset/png/hoard/permanently edge.png"
-dest_files=["res://.godot/imported/permanently edge.png-984ea977e896180ca9e635193d409054.ctex"]
+source_file="res://asset/png/element/aqua.png"
+dest_files=["res://.godot/imported/aqua.png-476800f1b8e8733334d543662a3dc9f6.ctex"]
 
 [params]
 

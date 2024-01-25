@@ -20,7 +20,7 @@ func set_attributes(input_: Dictionary) -> void:
 func init_basic_setting(input_: Dictionary) -> void:
 	update_value("maximum", input_.max)
 	set_colors()
-	custom_minimum_size = Vector2(Global.vec.size.state)
+	custom_minimum_size = Vector2(Global.vec.size.bar)
 	custom_minimum_size.x *= bar.max_value / health.value.total
 
 
@@ -30,7 +30,7 @@ func set_colors() -> void:
 	
 	for key in keys:
 		var style_box = StyleBoxFlat.new()
-		style_box.bg_color = Global.color.state[type][key]
+		style_box.bg_color = Global.color.bar[type][key]
 		var path = "theme_override_styles/" + key
 		bar.set(path, style_box)
 

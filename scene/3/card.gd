@@ -3,8 +3,7 @@ extends MarginContainer
 
 #region vars
 @onready var bg = $BG
-@onready var suit = $Suit
-@onready var rank = $Rank
+@onready var chevrons = $Chevrons
 
 var area = null
 var gameboard = null
@@ -19,25 +18,9 @@ func set_attributes(input_: Dictionary) -> void:
 
 
 func init_basic_setting(input_: Dictionary) -> void:
-	var input = {}
-	input.type = "suit"
-	input.subtype = input_.suit
-	suit.set_attributes(input)
-	custom_minimum_size = Global.vec.size.suit
-	
-	input.type = "number"
-	input.subtype = input_.rank
-	rank.set_attributes(input)
-	rank.custom_minimum_size = Global.vec.size.rank
-	
-	#suit.set("theme_override_constants/margin_left", 4)
-	#suit.set("theme_override_constants/margin_top", 4)
-	custom_minimum_size = suit.custom_minimum_size + rank.custom_minimum_size * 0.6
-
-	
 	var style = StyleBoxFlat.new()
 	bg.set("theme_override_styles/panel", style)
-	set_selected(false)
+	#set_selected(false)
 #endregion
 
 
@@ -66,5 +49,15 @@ func advance_area() -> void:
 		cardstack = gameboard.get(area)
 		cardstack.cards.add_child(self)
 	
-	if area == "hand" and gameboard.gambler.combo != null:
-		gameboard.gambler.combo.update_amount(self)
+	if area == "hand":# and gameboard.gambler.combo != null:
+		for cheveron in chevrons.get_children():
+			gameboard.gambler.bureau.apply_cheveron(cheveron)
+
+
+func add_chevron(description_: Dictionary) -> void:
+	var input = Dictionary(description_)
+	input.card = self
+	
+	var chevron = Global.scene.chevron.instantiate()
+	chevrons.add_child(chevron)
+	chevron.set_attributes(input)
