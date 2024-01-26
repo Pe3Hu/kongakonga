@@ -6,6 +6,7 @@ extends MarginContainer
 @onready var health = $VBox/Health
 @onready var evolution = $VBox/Evolution
 @onready var bureau = $VBox/Bureau
+@onready var workshop = $VBox/Workshop
 
 var cradle = null
 var table = null
@@ -26,6 +27,7 @@ func init_basic_setting() -> void:
 	gameboard.set_attributes(input)
 	evolution.set_attributes(input)
 	bureau.set_attributes(input)
+	workshop.set_attributes(input)
 	
 	input.limits = {}
 	input.limits.vigor = 0.25
@@ -33,4 +35,5 @@ func init_basic_setting() -> void:
 	input.limits.fatigue = 0.25
 	input.total = 100
 	health.set_attributes(input)
+	
 #endregion

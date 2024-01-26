@@ -11,6 +11,7 @@ var card = null
 var kind = null
 var type = null
 var subtype = null
+var weight = 0
 #endregion
 
 
@@ -48,4 +49,38 @@ func init_basic_setting(input_: Dictionary) -> void:
 	var style = StyleBoxFlat.new()
 	marker.bg.set("theme_override_styles/panel", style)
 	style.bg_color = Global.color.kind[kind]
+	calc_weight()
+
+
+func calc_weight() -> void:
+	var data = get_data()
+	weight = Global.dict.conversion.weight[data] * value.get_number()
 #endregion
+
+
+func get_data() -> Dictionary:
+	var data = {}
+	data.kind = kind
+	data.type = type
+	data.subtype = subtype
+	return data
+
+
+func employ_method(method_: String) -> void:
+	var before = get(method_)
+	
+	if method_ != "value":
+		set(method_, Global.dict.chain[method_][before])
+		
+		if method_ == "kind":
+			var style = marker.bg.get("theme_override_styles/panel")
+			style.bg_color = Global.color.kind[kind]
+		else:
+			marker.subtype = subtype + " " + type
+			marker.set_image()
+	else:
+		before.change_number(1)
+	
+	calc_weight()
+
+

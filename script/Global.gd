@@ -32,6 +32,7 @@ func init_arr() -> void:
 	arr.face = ["trigon", "tetragon", "pentagon"]
 	arr.element = ["aqua", "wind", "fire", "earth"]
 	arr.status = ["temporarily", "permanently"]
+	arr.stage = ["before", "after"]
 
 
 func init_num() -> void:
@@ -57,6 +58,7 @@ func init_dict() -> void:
 	init_card()
 	init_polyhedron()
 	init_deck()
+	init_conversion()
 
 
 func init_chain() -> void:
@@ -97,6 +99,17 @@ func init_chain() -> void:
 	dict.phase.stage["dawn"] = ["preparing"]
 	dict.phase.stage["noon"] = ["balancing"]
 	dict.phase.stage["dusk"] = ["reckoning"]
+	
+	dict.chain.kind = {}
+	dict.chain.kind["trigon"] = "tetragon"
+	dict.chain.kind["tetragon"] = "pentagon"
+	
+	dict.chain.subtype = {}
+	dict.chain.subtype["temporarily"] = "permanently"
+	
+	dict.chain.type = {}
+	dict.chain.type["vertex"] = "edge"
+	dict.chain.type["edge"] = "face"
 
 
 func init_neighbor() -> void:
@@ -199,6 +212,42 @@ func init_deck() -> void:
 	dict.deck.starter.append_array(array)
 
 
+func init_conversion() -> void:
+	dict.conversion = {}
+	dict.conversion.index = {}
+	dict.conversion.method = {}
+	dict.conversion.weight = {}
+	
+	var path = "res://asset/json/kongakonga_conversion.json"
+	var array = load_data(path)
+	var exceptions = ["index"]
+	
+	for conversion in array:
+		var data = {}
+		data.before = {}
+		data.after = {}
+		
+		for key in conversion:
+			if !exceptions.has(key):
+				var words = key.split(" ")
+				
+				if words.size() > 1:
+					#if arr.stage.has(words[1]):
+					data[words[1]][words[0]] = conversion[key]
+				else:
+					data[key] = conversion[key]
+		
+		dict.conversion.index[conversion.index] = data
+		
+		if !dict.conversion.method.has(data.before):
+			dict.conversion.method[data.before] = {}
+		
+		dict.conversion.method[data.before][data.method] = conversion.index
+		
+		if data.method == "value":
+			dict.conversion.weight[data.before] = data.price
+
+
 func init_node() -> void:
 	node.game = get_node("/root/Game")
 
@@ -210,6 +259,8 @@ func init_scene() -> void:
 	
 	scene.card = load("res://scene/3/card.tscn")
 	scene.chevron = load("res://scene/3/chevron.tscn")
+	
+	scene.augmentation = load("res://scene/4/augmentation.tscn")
 
 
 func init_vec():
@@ -230,6 +281,8 @@ func init_vec():
 	vec.size.hierarchy = Vector2(vec.size.number)
 	vec.size.time = Vector2(vec.size.number)
 	vec.size.trigger = Vector2(vec.size.number)
+	vec.size.method = Vector2(vec.size.number)
+	
 	
 	init_window_size()
 

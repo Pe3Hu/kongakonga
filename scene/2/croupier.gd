@@ -48,6 +48,9 @@ func commence() -> void:
 	for gambler in gamblers:
 		gambler.bureau.end_of_turn()
 	
+		if gambler.health.index.get_number() == 0:
+			gambler.workshop.augment_card()
+			#gambler.evolution.get_experience(101)
 	#while table.loser == null:
 	#	follow_stage()
 #endregion

@@ -9,6 +9,7 @@ var evolution = null
 #endregion
 
 
+#region init
 func set_attributes(input_: Dictionary) -> void:
 	evolution = input_.evolution
 	
@@ -36,6 +37,7 @@ func set_colors() -> void:
 		style_box.bg_color = Global.color.bar.experience[key]
 		var path = "theme_override_styles/" + key
 		bar.set(path, style_box)
+#endregion
 
 
 func update_value(value_: String, shift_: int) -> void:

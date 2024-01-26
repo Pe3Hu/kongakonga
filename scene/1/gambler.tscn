@@ -1,10 +1,11 @@
-[gd_scene load_steps=7 format=3 uid="uid://da80rvclernjh"]
+[gd_scene load_steps=8 format=3 uid="uid://da80rvclernjh"]
 
 [ext_resource type="Script" path="res://scene/1/gambler.gd" id="1_583bm"]
 [ext_resource type="PackedScene" uid="uid://cnlof2444v3rr" path="res://scene/4/health.tscn" id="2_04ego"]
 [ext_resource type="PackedScene" uid="uid://dtop6ce8ht5b" path="res://scene/3/gameboard.tscn" id="2_u8gk5"]
 [ext_resource type="PackedScene" uid="uid://dpud0v7viygeh" path="res://scene/4/evolution.tscn" id="3_p6aa1"]
 [ext_resource type="PackedScene" uid="uid://dprnwsrk4wybs" path="res://scene/4/bureau.tscn" id="4_2klll"]
+[ext_resource type="PackedScene" uid="uid://df6jsuuihn4f0" path="res://scene/4/workshop.tscn" id="6_rs4lg"]
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_7paps"]
 
@@ -43,4 +44,7 @@ layout_mode = 2
 layout_mode = 2
 
 [node name="Gameboard" parent="VBox" instance=ExtResource("2_u8gk5")]
+layout_mode = 2
+
+[node name="Workshop" parent="VBox" instance=ExtResource("6_rs4lg")]
 layout_mode = 2

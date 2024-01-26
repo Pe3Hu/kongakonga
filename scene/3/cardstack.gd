@@ -30,7 +30,8 @@ func reshuffle_all_cards() -> void:
 
 func advance_random_card() -> void:
 	refill_check()
-	var card = cards.get_children().pick_random()
+	#var card = cards.get_children().pick_random()
+	var card = cards.get_child(0)
 	card.advance_area()
 
 

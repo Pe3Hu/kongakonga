@@ -10,6 +10,7 @@ var type = null
 #endregion
 
 
+#region init
 func set_attributes(input_: Dictionary) -> void:
 	health = input_.health
 	type = input_.type
@@ -33,6 +34,7 @@ func set_colors() -> void:
 		style_box.bg_color = Global.color.bar[type][key]
 		var path = "theme_override_styles/" + key
 		bar.set(path, style_box)
+#endregion
 
 
 func update_value(value_: String, shift_: int) -> void:

@@ -26,6 +26,7 @@ func init_basic_setting(input_: Dictionary) -> void:
 	
 	input.evolution = self
 	experience.set_attributes(input)
+	
 #endregion
 
 
@@ -37,3 +38,4 @@ func next_level() -> void:
 	experience.bar.value -= experience.bar.max_value
 	level.change_number(1)
 	experience.recalc_max_value()
+
